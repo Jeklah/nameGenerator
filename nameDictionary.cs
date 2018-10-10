@@ -7,9 +7,9 @@ using System.IO;
 
 namespace nameGenerator {
     public class nameDictionary {
-        const string FILEPATH = "D:\\Projects\nameGenerator\nameGenerator\names.txt";
+        const string FILEPATH = "D:\\Projects\\nameGenerator\\nameGenerator\\names.txt";
         // List<string> names = new List<string>();
         static string[] nameFile = File.ReadAllLines(FILEPATH);
-        public List<string> names = new List<string>(nameFile); 
+        public static List<string> names = new List<string>(nameFile); 
     }
 }
